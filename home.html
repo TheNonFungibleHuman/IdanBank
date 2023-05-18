@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Banking System</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="title">Idan Banking System</h1>
+      <button id="balance-button" class="button">Balance</button>
+
+      <div class="form-container">
+        <h2 class="form-title">Deposit</h2>
+        <form id="deposit-form">
+          <label for="deposit-amount">Amount:</label>
+          <input type="number" id="deposit-amount" required />
+          <br />
+          <label for="deposit-notes">Notes:</label>
+          <input type="text" id="deposit-notes" />
+          <br />
+          <button type="submit" class="button">Deposit</button>
+        </form>
+      </div>
+
+      <div class="form-container">
+        <h2 class="form-title">Withdraw</h2>
+        <form id="withdraw-form">
+          <label for="withdraw-amount">Amount:</label>
+          <input type="number" id="withdraw-amount" required />
+          <br />
+          <label for="withdraw-notes">Notes:</label>
+          <input type="text" id="withdraw-notes" />
+          <br />
+          <button type="submit" class="button">Withdraw</button>
+        </form>
+      </div>
+
+      <div class="form-container">
+        <h2 class="form-title">Transfer Funds</h2>
+        <form id="transfer-form">
+          <label for="transfer-from-account">From Account:</label>
+          <select id="transfer-from-account">
+            <option value="account-1">Checking</option>
+            <option value="account-2">Savings</option>
+          </select>
+          <br />
+          <label for="transfer-to-account">To Account:</label>
+          <select id="transfer-to-account">
+            <option value="account-1">Checking</option>
+            <option value="account-2">Savings</option>
+          </select>
+          <br />
+          <label for="transfer-amount">Amount:</label>
+          <input type="number" id="transfer-amount" required />
+          <br />
+          <label for="transfer-notes">Notes:</label>
+          <input type="text" id="transfer-notes" />
+          <br />
+          <button type="submit" class="button">Transfer</button>
+        </form>
+      </div>
+
+      <div class="transaction-history-container">
+        <h2 class="transaction-history-title">Transaction History</h2>
+        <table id="transaction-history-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Account</th>
+              <th>Type</th>
+              <th>Amount</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Transaction history rows will be added dynamically -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2023 Idan Bank by The Non Fungible Human🎩🦅</p>
+    </footer>
+    <script src="bank.js"></script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Mini Bank App</title>
+</head>
+<body>
+    <header>
+		<h1>Mini Banking System</h1>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#create-account">Create Account</a></li>
+				<li><a href="#login">Login</a></li>
+				<li><a href="#reset-password">Reset Password</a></li>
+				<li><a href="#dashboard">Dashboard</a></li>
+				<li><a href="#deposit">Deposit</a></li>
+				<li><a href="#withdraw">Withdraw</a></li>
+				<li><a href="#transfer-funds">Transfer Funds</a></li>
+				<li><a href="#transaction-history">Transaction History</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="home">
+			<h2>Welcome to the Mini Banking System</h2>
+			<p>This is a simple banking system that allows you to create an account, deposit and withdraw funds, transfer funds to other accounts, and view your transaction history.</p>
+		</section>
+		<section id="create-account">
+			<h2>Create an Account</h2>
+			<form action="create-account.php" method="post">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="address">Address:</label>
+				<input type="text" id="address" name="address" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" required>
+				<input type="submit" value="Create Account">
+			</form>
+		</section>
+		<section id="login">
+			<h2>Login</h2>
+			<form action="login.php" method="post">
+				<label for="username">Username/Email:</label>
+				<input type="text" id="username" name="username" required>
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" required>
+				<input type="submit" value="Login">
+			</form>
+		</section>
+		<section id="reset-password">
+			<h2>Reset Password</h2>
+			<form action="reset-password.php" method="post">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<input type="submit" value="Reset Password">
+			</form>
+		</section>
+		<section id="dashboard">
+			<h2>Dashboard</h2>
+			<p>Your account balance is: $500.00</p>
+			<button><a href="#deposit">Deposit Funds</a></button>
+			<button><a href="#withdraw">Withdraw Funds</a></button>
+		</section>
+		<section id="deposit">
+			<h2>Deposit Funds</h2>
+			<form action="deposit.php" method="post">
+				<label for="amount">Amount:</label>
+				<input type="number" id="amount" name="amount" required>
+				<input type="submit" value="Deposit">
+			</form>
+		</section>
+		<section id="withdraw">
+			<h2>Withdraw Funds</h2>
+			<form action="withdraw.php" method="post">
+				<label for="amount">Amount:</label>
+				<input type="number" id="amount" name="amount" required>
+				<input type="submit" value="Withdraw">
+			</form>
+		</section>
+		<section id="transfer-funds">
+			<h2>Transfer Funds</h2>
+			<form action="transfer-funds.php" method="post">
+				<label for="from-account">From Account:</label>
+				<select id="from-account" name="from-account" required>
+					<option value="">--Select Account--</option>
+					<option value="checking">Checking</option>
+					<option value="savings">Savings</option>
+				</select>
+				<label for="to-account">To Account:</label>
+				<select id="to-account" name="to-account" required>
+					<option value="">--Select Account--</option>
+					<option value="checking">Checking</option>
+					<option value="savings">Savings</option>
+				</select>
+				<label for="amount">Amount:</label>
+				<input type="number" id="amount" name="amount" required>
+				<input type="submit" value="Transfer">
+			</form>
+		</section>
+		<section id="transaction-history">
+			<h2>Transaction History</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Date</th>
+						<th>Type</th>
+						<th>Amount</th>
+						<th>Notes</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>05/10/2023</td>
+						<td>Deposit</td>
+						<td>$100.00</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>05/08/2023</td>
+						<td>Withdrawal</td>
+						<td>$50.00</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>05/05/2023</td>
+						<td>Transfer</td>
+						<td>$25.00</td>
+						<td>To Savings</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Mini Banking System</p>
+	</footer>
+</body>
+</html>
+</body>
+</html> -->
