@@ -158,6 +158,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 #FAQs-Section h1 {
   background-color: #3d2f23;
