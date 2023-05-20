@@ -1,63 +1,81 @@
-/* body {
-	background-color: #F2F2F2;
-	font-family: Arial, sans-serif;
+body {
+  font-family: "Clash Display", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-	color: #CB997E;
-	text-align: center;
-	margin-top: 50px;
+  color: white;
+  background-color: #3d2f23;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.form-container {
+  height: 100vh;
+  background-image: url("../Assets/Sectionimg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 form {
-	border: 2px solid #A5A58D;
-	border-radius: 10px;
-	padding: 20px;
-	width: 80%;
-	max-width: 400px;
-	margin: 50px auto;
-	background-color: #FFFFFF;
+  border: 2px solid #3d2f23;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #ffffff;
 }
 
 label {
-	display: block;
-	margin: 10px 0;
-	color: #CB997E;
-	font-weight: bold;
+  display: block;
+  margin: 10px 0;
+  color: #3d2f23;
+  font-weight: bold;
 }
 
-input[type="text"], input[type="email"], input[type="password"] {
-	width: 90%;
-	padding: 10px;
-	border: 2px solid #A5A58D;
-	border-radius: 5px;
-	margin-bottom: 20px;
-    color: #333333;
-    font-size: 16px;
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  border: 2px solid #3d2f23;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: #333333;
+  font-size: 16px;
 }
 
-input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="password"]::placeholder {
-    color: #999999;
-    font-size: 16px;
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #999999;
+  font-size: 16px;
 }
 
 input[type="submit"] {
-	background-color: #CB997E;
-	color: #FFFFFF;
-	border: none;
-	padding: 10px 20px;
-	border-radius: 5px;
-	font-size: 16px;
-	cursor: pointer;
-	transition: background-color 0.3s ease;
+  background-color: #3d2f23;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover {
-	background-color: #A5A58D;
+  background-color: white;
+  color: #3d2f23;
 }
 
 @media only screen and (max-width: 600px) {
-	form {
-		width: 90%;
-	}
-} */
+  form {
+    width: 90%;
+  }
+}

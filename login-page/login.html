@@ -1,37 +1,45 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
     <link rel="stylesheet" type="text/css" href="login.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/clash-display"
+      rel="stylesheet" />
+    <link
   </head>
   <body>
-    <h1>Login to Your Bank Account</h1>
-    <form action="home.html" onsubmit="return validateForm()">
-      <label for="name">Name:</label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        placeholder="Enter your name"
-        required
-        pattern="[A-Za-z]{3,}" />
-      <label for="email">Email:</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Enter your email"
-        required />
-      <label for="password">Password:</label>
-      <input
-        type="password"
-        id="password"
-        name="password"
-        placeholder="Enter your password"
-        required />
-      <input type="submit" value="Sign In" />
-    </form>
+    <div class="form-container">
+      <h1>Login to Your Bank Account</h1>
+      <form
+        action="../banking-system/bank.html"
+        onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+          pattern="[A-Za-z]{3,}" />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter a password you'll use in the app"
+          required />
+        <input type="submit" value="Sign In" />
+      </form>
+    </div>
   </body>
   <script src="login.js"></script>
-</html> -->
+</html>

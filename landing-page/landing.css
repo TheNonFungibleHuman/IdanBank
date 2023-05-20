@@ -74,7 +74,7 @@ nav {
 }
 .hero {
   height: 100vh;
-  background-image: url("Assets/Sectionimg.png");
+  background-image: url("../Assets/Sectionimg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -116,7 +116,7 @@ nav {
   color: #3d2f23;
 }
 #about-us-section {
-  background-image: url(Assets/Aboutus.png);
+  background-image: url(../Assets/Aboutus.png);
   background-size: cover;
   background-position: center;
   padding: 50px;
@@ -151,7 +151,7 @@ nav {
 }
 
 #FAQs-Section {
-  background-image: url(Assets/FAQ.png);
+  background-image: url(../Assets/FAQ.png);
   background-size: cover;
   background-position: center;
   padding: 50px;
