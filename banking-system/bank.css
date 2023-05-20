@@ -1,7 +1,7 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-  color: #000;
+  font-family: "Clash Display", sans-serif;
+  background-color: #3d2f23;
+  color: #ffffff;
   margin: 0;
 }
 
@@ -19,7 +19,7 @@ body {
 
 .form-container {
   margin-bottom: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #ffffff;
   padding: 20px;
   border-radius: 5px;
 }
@@ -31,8 +31,8 @@ body {
 }
 
 .button {
-  background-color: #eee;
-  color: #000;
+  background-color: #ffffff;
+  color: #3d2f23;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -41,7 +41,8 @@ body {
 }
 
 .button:hover {
-  background-color: #ccc;
+  background-color: #3d2f23;
+  color: #ffffff;
 }
 
 input[type="number"],
@@ -50,7 +51,7 @@ select {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #ffffff;
   border-radius: 5px;
   box-sizing: border-box;
   font-size: 16px;
@@ -60,11 +61,11 @@ input[type="number"]:focus,
 input[type="text"]:focus,
 select:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: #fff;
 }
 
 .transaction-history-container {
-  border: 1px solid #ccc;
+  border: 1px solid #ffffff;
   border-radius: 5px;
   padding: 20px;
 }
@@ -74,22 +75,7 @@ select:focus {
   margin-bottom: 10px;
   font-size: 24px;
 }
-footer{
-    text-align: center;
-    font-family: cursive;
-}
-table {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: left;
-}
-
-th,
-td {
-  padding: 10px;
-  border: 1px solid #ccc;
-}
-
-th {
-  background-color: #eee;
+footer {
+  text-align: center;
+  font-family: cursive;
 }
