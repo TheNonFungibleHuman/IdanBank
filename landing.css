@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-size: 16px;
+}
+
+nav {
+  background-color: #3d2f23;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25rem;
+  font-family: "Clash Display", sans-serif;
+}
+
+.logo img {
+  height: 3.75rem;
+  width: auto;
+}
+
+.links-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 2.5rem;
+  padding: 0.3125rem;
+  margin: 0 0.3125rem;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0.3125rem;
+  overflow: hidden;
+}
+
+.links li {
+  margin: 0 1.25rem;
+}
+
+.links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #fff;
+}
+
+.button-container {
+  margin-right: 1.25rem;
+}
+
+.button1 {
+  background-color: #fff;
+  color: #3d2f23;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.625rem 1.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  width: auto;
+}
+
+.button1:hover {
+  background-color: #3d2f23;
+  color: #f2f2f2;
+}
+.hero {
+  height: 100vh;
+  background-image: url('Assets/Sectionimg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.button2 {
+  display: inline-block;
+  background-color: #3d2f23;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 1.5rem 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: #3d2f23;
+}
+
+
+/* Media queries for different screen sizes */
+@media (max-width: 48rem) {
+  /* Styles for screens smaller than 768px */
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 1.25rem;
+  }
+
+  .links-container {
+    margin: 1.25rem 0;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+
+  .links li {
+    margin: 0.625rem 0;
+  }
+
+  .button-container {
+    margin-right: 0;
+    margin-top: 1.25rem;
+  }
+}
+
+
+
+
+@media (max-width: 36rem) {
+  /* Styles for screens smaller than 576px */
+  .logo img {
+    height: 2.5rem;
+  }
+
+  .button1 {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+  }
+}
