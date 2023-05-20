@@ -32,6 +32,7 @@ class User {
     amount: number,
     notes: string = ""
   ): Transaction | null {
+    if (amount <= 0) return null; // Added this check
     const account = this.accounts.find((acc) => acc.getId() === accountId);
     if (account) {
       const transaction = account.deposit(amount, notes);
@@ -46,6 +47,7 @@ class User {
     amount: number,
     notes: string = ""
   ): Transaction | null {
+    if (amount <= 0) return null; // Added this check
     const account = this.accounts.find((acc) => acc.getId() === accountId);
     if (account) {
       const transaction = account.withdraw(amount, notes);
@@ -61,6 +63,7 @@ class User {
     amount: number,
     notes: string = ""
   ): Transaction | null {
+    if (amount <= 0) return null;
     const fromAccount = this.accounts.find(
       (acc) => acc.getId() === fromAccountId
     );
@@ -121,6 +124,7 @@ class Account {
 
   // Make a deposit to the account
   deposit(amount: number, notes: string = ""): Transaction {
+    if (amount <= 0) return null;
     const transaction = new Transaction(this.id, "Deposit", amount, notes);
     this.balance += amount;
     this.transactions.push(transaction);
@@ -129,6 +133,7 @@ class Account {
 
   // Make a withdrawal from the account
   withdraw(amount: number, notes: string = ""): Transaction | null {
+    if (amount <= 0) return null;
     if (this.balance >= amount) {
       const transaction = new Transaction(this.id, "Withdrawal", amount, notes);
       this.balance -= amount;
