@@ -180,10 +180,15 @@ input {
 /* Accordion styles */
 .accordion {
   border-radius: 8px;
-  width: 100%;
+  width: 50%;
   overflow: hidden;
   padding: 2rem 2.5rem;
   background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 .tab {
