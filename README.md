@@ -1,7 +1,7 @@
 # IdanBank
 This app allows users to perform basic banking actions in the browser like depositing, withdrawing and transferring money.
 
-#Features
+**Features**
 
     Account login
     Deposit money
@@ -9,13 +9,13 @@ This app allows users to perform basic banking actions in the browser like depos
     Transfer money to another account
     View account balance
 
-#Technical Specs
+**Technical Specs**
 
     Built with TypeScript object oriented programming
     Uses HTML and CSS for frontend
     Stores data in memory (not persisted)
 
-#How it works
+**How it works**
 
 A Bank class is defined in TypeScript with methods for:
 
@@ -34,7 +34,7 @@ Getting Started
 
     Enter your account details and start banking!
 
-Limitations
+**Limitations**
 
     Data is not persisted between page refreshes
     Only supports a single bank at the moment
