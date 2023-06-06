@@ -83,6 +83,7 @@ nav {
   align-items: center;
   justify-content: center;
   width: 100%;
+  overflow:hidden
 }
 
 .hero-content {
@@ -90,12 +91,14 @@ nav {
   color: #3d2f23;
   width: 60%;
   text-decoration: 2px solid;
+  overflow: hidden;
 }
 
 .hero-content h1 {
   font-size: 3rem;
   font-weight: bold;
   padding-bottom: 15rem;
+  overflow: hidden;
 }
 
 .button2 {
@@ -110,6 +113,7 @@ nav {
   text-transform: uppercase;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  overflow: hidden;
 }
 
 .button2:hover {
@@ -123,6 +127,7 @@ nav {
   padding: 50px;
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .about-us-heading {
@@ -133,6 +138,7 @@ nav {
   margin-bottom: 50px;
   width: 100%;
   text-align: center;
+  overflow: hidden;
 }
 
 .about-us-content-container {
@@ -140,6 +146,7 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+  overflow: hidden;
 }
 
 .about-us-content {
@@ -160,6 +167,7 @@ nav {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 #FAQs-Section h1 {
   background-color: #3d2f23;
@@ -169,6 +177,7 @@ nav {
   margin-bottom: 50px;
   width: 100%;
   text-align: center;
+  overflow: hidden;
 }
 
 input {
