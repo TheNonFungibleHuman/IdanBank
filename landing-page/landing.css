@@ -88,9 +88,8 @@ nav {
 .hero-content {
   text-align: center;
   color: #3d2f23;
-  width: 60%;
+  width: fit-content;
   text-decoration: 2px solid;
-  overflow: hidden;
 }
 
 .hero-content h1 {
